@@ -1,5 +1,4 @@
 ﻿using Syncfusion.Maui.Core.Hosting;
-using Syncfusion.Maui.DataGrid.Hosting;
 
 namespace DataGridMAUI;
 
@@ -15,8 +14,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-        builder.ConfigureSyncfusionCore();
-        builder.ConfigureSyncfusionDataGrid();
+        builder.ConfigureSyncfusionCore(); 
         return builder.Build();
 	}
 }
