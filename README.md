@@ -83,7 +83,7 @@ Create a DataGridTemplateColumn with a button inside and bind a buttons’ Comma
             <syncfusion:DataGridTextColumn MappingName="Country"></syncfusion:DataGridTextColumn>
             <syncfusion:DataGridTemplateColumn MappingName="CustomerID">
                 <syncfusion:DataGridTemplateColumn.CellTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="local:OrderInfo">
                         <Button Text="Delete" Command="{Binding Source={x:Reference dataGrid},Path=BindingContext.ButtonCommand}"  CommandParameter="{Binding .}"></Button>
                     </DataTemplate>
                 </syncfusion:DataGridTemplateColumn.CellTemplate>
